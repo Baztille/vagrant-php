@@ -71,7 +71,8 @@ vagrantfile:
         host: detect
 server:
     install: '1'
-    packages: {  }
+    packages: 
+        - pear
 users_groups:
     install: '1'
     groups: {  }
@@ -202,7 +203,8 @@ php:
             - fpm
             - curl
             - mcrypt
-        pear: {  }
+        pear: 
+            - Log
         pecl: {  }
     ini:
         display_errors: 'On'
