@@ -205,7 +205,8 @@ php:
             - mcrypt
         pear: 
             - Log
-        pecl: {  }
+        pecl:
+            - mongo
     ini:
         display_errors: 'On'
         error_reporting: '-1'
@@ -349,14 +350,14 @@ sqlite:
     adminer: 0
     databases: {  }
 mailcatcher:
-    install: '0'
+    install: '1'
     settings:
-        smtp_ip: 0.0.0.0
+        smtp_ip: 127.0.0.1
         smtp_port: 1025
         http_ip: 0.0.0.0
         http_port: '1080'
         mailcatcher_path: /usr/local/rvm/wrappers/default
-        from_email_method: inline
+        from_email_method: headers
 beanstalkd:
     install: '0'
     settings:
